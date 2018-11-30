@@ -1,0 +1,7 @@
+﻿/********************************************Mudando a página do App à qualquer momento:
+App.Current.MainPage = novaPágina.
+<!-- ******************************************************Existem 3 grupos de elementos 
+    Pages: Tipos de tela
+    layout: Orgainzar elementos na tela, posicionar
+    view: Controles que vão interagir com o usuário
+    -->

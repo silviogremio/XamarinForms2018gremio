@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- ******************************************************Existem 3 grupos de elementos 
+    Pages: Tipos de tela
+    layout: Orgainzar elementos na tela, posicionar
+    view: Controles que vão interagir com o usuário
+    -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Secao05"
+             x:Class="Secao05.MainPage">
+    
+    <!-- StackLayout : permite empilhar os elementos, um debaixo do outro
+    Padding: Vai colocar distância de 30 da margem para qualquer item interno
+    Spacing: Cria distância entre os elementos empilhados
+    -->
+    <StackLayout BackgroundColor="#FFFFFF" Padding="30" Spacing="30">
+        <!-- Imagem: colar imagem
+        Android: Resources/drawable
+        IOS: Resources
+        -->
+        
+        <Image Source="logo_pmi.png" x:Name="LOGO"/>
+        <!-- Campo de texto-->
+        <Entry Placeholder="Digite o CEP" PlaceholderColor="#FFBF00" BackgroundColor="#FFFFFF" x:Name="CEP"/>
+        <!-- Botão-->        
+        <!-- #00416B : botão azul-->
+        <Button Text="BUSCAR CEP" TextColor="#FFFFFF" BackgroundColor="#008000" x:Name="BOTAO"/>
+        <!-- Label, conteúdo de leitura do usuário final-->
+        <Label Text="" x:Name="RESULTADO"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand" 
+           TextColor="#008000"/>
+          <Label Text="Sílvio César de Carvalho - Analista de Sistemas - SMD" x:Name="AUTOR"
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+           BackgroundColor="#008000"
+           TextColor="#FFFFFF"/>  
+    </StackLayout>
+
+</ContentPage>
